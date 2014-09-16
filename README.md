@@ -25,3 +25,11 @@ Uber.getProducts(lat, lon, function(error, response) {
 });
 ```
 
+## API Reference
+```
+getProducts(latitude, longitude, callback)
+getPriceEstimate(start_latitude, start_longitude, end_latitude, end_longitude, callback)
+getTimeEstimate(start_latitude, start_longitude, [customer_uuid], [product_id], callback)
+```
+
+
