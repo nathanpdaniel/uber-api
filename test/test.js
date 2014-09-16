@@ -1,7 +1,7 @@
 var assert = require("assert"),
     should = require("chai").should(),
     uberLib = require("../uber"),
-    token = 'aD1OrYvmUfS8cyB-AVCVPmr4Qv01HtcpR-jGCBM-',
+    token = '',
     uber = new uberLib(token,'v1'),
     sLat = 36.3018,
     sLon = -94.1215,
