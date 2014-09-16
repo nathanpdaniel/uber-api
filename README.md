@@ -1,4 +1,4 @@
-uber
+uber-api
 ====
 
 NodeJS implementation of Uber API
