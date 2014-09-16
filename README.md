@@ -4,7 +4,7 @@ uber
 NodeJS implementation of Uber API
 
 ## Installation
-npm install uber-api
+```npm install uber-api
 
 ## Usage
 ```javascript
