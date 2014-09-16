@@ -3,9 +3,12 @@ uber
 
 NodeJS implementation of Uber API
 
-Example
+## Installation
+npm install uber-api
+
+## Usage
 ```javascript
-var uberLib = require('../uber.js'),
+var uberLib = require('uber-api'),
     token = 'YOUR SERVER TOKEN',
     Uber = new uberLib(token,'v1'),
     lat = 36,
