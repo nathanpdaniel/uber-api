@@ -4,7 +4,7 @@ uber
 NodeJS implementation of Uber API
 
 Example
-'''javascript
+```javascript
 var uberLib = require('../uber.js'),
     token = 'YOUR SERVER TOKEN',
     Uber = new uberLib(token,'v1'),
@@ -18,5 +18,5 @@ Uber.getProducts(lat, lon, function(error, response) {
     console.log(response);
   }
 });
-'''
+```
 
