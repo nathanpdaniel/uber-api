@@ -1,7 +1,7 @@
 var assert = require("assert"),
     should = require("chai").should(),
     uberLib = require("../uber"),
-    token = '',
+    token = '_3_a5bifpvPRInBErdSStpHuDIuRpEoM3j7gj_3y',
     uber = new uberLib(token,'v1'),
     sLat = 36.3018,
     sLon = -94.1215,
@@ -17,6 +17,7 @@ describe("uber-api", function() {
           should.not.exist(error);
           should.exist(response);
           response.should.be.an('object');
+          done();
         } catch (e) {
           done(e);
         }
@@ -30,6 +31,7 @@ describe("uber-api", function() {
           should.not.exist(error);
           should.exist(response);
           response.should.be.an('object');
+          done();
         } catch (e) {
           done(e);
         }
@@ -43,6 +45,7 @@ describe("uber-api", function() {
           should.not.exist(error);
           should.exist(response);
           response.should.be.an('object');
+          done();
         } catch (e) {
           done(e);
         }
