@@ -1,7 +1,6 @@
 var assert = require("assert"),
     should = require("chai").should(),
-    uber = require("../uber")('','v1'),
-    token = '',
+    uber = require("../uber")({server_token:'',versin:'v1'}),
     sLat = 36.3018,
     sLon = -94.1215,
     eLat = 36.0,
