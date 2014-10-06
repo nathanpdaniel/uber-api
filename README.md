@@ -10,7 +10,7 @@ npm install uber-api
 
 ## Usage
 ```javascript
-var Uber = require('uber-api')('YOUR SERVER TOKEN','v1'),
+var Uber = require('uber-api')({server_token:'YOUR SERVER TOKEN',version:'v1'}),
     lat = 36,
     lon = -94;
 
