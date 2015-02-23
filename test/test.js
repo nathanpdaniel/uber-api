@@ -1,6 +1,7 @@
 var assert = require("assert"),
     should = require("chai").should(),
-    uber = require("../uber")({server_token:'',versin:'v1'}),
+    config = require("../../demo/config"),
+    uber = require("../uber")({server_token:config.token,versin:'v1'}),
     sLat = 36.3018,
     sLon = -94.1215,
     eLat = 36.0,
@@ -39,6 +40,20 @@ describe("uber-api", function() {
   describe(".getTimeEstimate", function() {
     it("Should return a JSON object of an array of time estimates based on starting point.", function(done) {
       uber.getTimeEstimate(sLat, sLon, function(error, response) {
+        try {
+          should.not.exist(error);
+          should.exist(response);
+          response.should.be.an('object');
+          done();
+        } catch (e) {
+          done(e);
+        }
+      });
+    });
+  });
+  describe(".getPromotions", function() {
+    it("Should return a JSON object of an array of promotions available to a new user based on location.", function(done) {
+      uber.getPromotions(sLat, sLon, function(error, response) {
         try {
           should.not.exist(error);
           should.exist(response);

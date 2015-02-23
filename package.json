@@ -2,7 +2,7 @@
   "name": "uber-api",
   "description": "Uber API for NodeJS",
   "author": "Nathan Daniel <nathanpdaniel01@gmail.com>",
-  "version": "0.0.9",
+  "version": "0.1.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/nathanpdaniel/uber-api.git"
