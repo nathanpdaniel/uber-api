@@ -2,13 +2,14 @@
   "name": "uber-api",
   "description": "Uber API for NodeJS",
   "author": "Nathan Daniel <nathanpdaniel01@gmail.com>",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/nathanpdaniel/uber-api.git"
   },
   "dependencies": {
-    "request": "*"
+    "request": "*",
+    "promise": "^6.1.0"
   },
   "devDependencies": {
     "mocha": "*",
