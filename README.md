@@ -40,6 +40,13 @@ getPromotions(start_latitude, start_longitued, end_latitude, end_longitued [, ca
 +†getHistory([callback])
 ```
 
-+ These require special tokens you can get via OAuth2.  You can then initialize Uber with {bearer_token:'YOUR BEARER TOKEN',version:'v1'}.
++These require special tokens you can get via OAuth2.  You can then initialize Uber with {bearer_token:'YOUR BEARER TOKEN',version:'v1'}.
 
 † This functionality inspects the version passed in and if it is "v1" will auto adjust to "v1.1".  As per the Uber documentation (https://developer.uber.com/v1/endpoints/#user-activity-v1) v1 requires special permission to use. This library currently assumes this permission is not in place.
+
+Rate limit state is returned as a member of the response object.
+```
+Uber.getProducts(lat, lon).then(function(response){
+  console.log(response.rate_limit);
+});
+```
