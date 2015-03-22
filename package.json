@@ -9,12 +9,17 @@
   },
   "dependencies": {
     "promise": "^6.1.0",
-    "request": "*",
+    "request": "^2.53.0",
     "underscore": "^1.8.2"
   },
   "devDependencies": {
-    "mocha": "*",
-    "chai": "*"
+    "chai": "*",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.4",
+    "gulp-mocha": "^2.0.0",
+    "gulp-util": "^3.0.4",
+    "jshint-stylish": "^1.0.1",
+    "mocha": "*"
   },
   "bugs": {
     "url": "https://github.com/nathanpdaniel/uber-api/issues"
