@@ -2,18 +2,24 @@
   "name": "uber-api",
   "description": "Uber API for NodeJS",
   "author": "Nathan Daniel <nathanpdaniel01@gmail.com>",
-  "version": "0.2.3",
+  "version": "0.3.3",
   "repository": {
     "type": "git",
     "url": "git://github.com/nathanpdaniel/uber-api.git"
   },
   "dependencies": {
-    "request": "*",
-    "promise": "^6.1.0"
+    "promise": "^6.1.0",
+    "request": "^2.53.0",
+    "underscore": "^1.8.2"
   },
   "devDependencies": {
-    "mocha": "*",
-    "chai": "*"
+    "chai": "*",
+    "gulp": "^3.8.11",
+    "gulp-jshint": "^1.9.4",
+    "gulp-mocha": "^2.0.0",
+    "gulp-util": "^3.0.4",
+    "jshint-stylish": "^1.0.1",
+    "mocha": "*"
   },
   "bugs": {
     "url": "https://github.com/nathanpdaniel/uber-api/issues"
