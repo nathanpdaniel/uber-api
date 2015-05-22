@@ -1,7 +1,7 @@
 var assert = require("assert"),
     should = require("chai").should(),
-    config = require("../../demo/config"),
-    uber = require("../uber")({server_token:config.token,versin:'v1'}),
+    config = require("../demo/config"),
+    uber = require("../uber")( { server_token: config.token, version: 'v1'}),
     sLat = 36.3018,
     sLon = -94.1215,
     eLat = 36.0,
@@ -11,7 +11,7 @@ var assert = require("assert"),
 describe("uber-api", function() {  
   describe(".getProducts", function() {
     it("Should return a list of available products based on location (latitude and longitude).", function(done) {
-      uber.getProducts(sLat, sLon, function(error, response) {
+      uber.getProducts({ lat : sLat, lng : sLon}, function(error, response) {
         try {
           should.not.exist(error);
           should.exist(response);
@@ -25,7 +25,7 @@ describe("uber-api", function() {
   }); 
   describe(".getPriceEstimate", function() {
     it("Should return a JSON object of an array of price estimates based on starting and ending points.", function(done) {
-      uber.getPriceEstimate(sLat, sLon, eLat, eLon, function(error, response) {
+      uber.getPriceEstimate({sLat: sLat, sLng: sLon, eLat: eLat, eLng: eLon}, function(error, response) {
         try {
           should.not.exist(error);
           should.exist(response);
@@ -39,7 +39,7 @@ describe("uber-api", function() {
   });
   describe(".getTimeEstimate", function() {
     it("Should return a JSON object of an array of time estimates based on starting point.", function(done) {
-      uber.getTimeEstimate(sLat, sLon, function(error, response) {
+      uber.getTimeEstimate({sLat: sLat, sLng: sLon }, function(error, response) {
         try {
           should.not.exist(error);
           should.exist(response);
@@ -53,7 +53,7 @@ describe("uber-api", function() {
   });
   describe(".getPromotions", function() {
     it("Should return a JSON object of an array of promotions available to a new user based on location.", function(done) {
-      uber.getPromotions(sLat, sLon, function(error, response) {
+      uber.getPromotions({sLat: sLat, sLng: sLon, eLat: eLat, eLng: eLon}, function(error, response) {
         try {
           should.not.exist(error);
           should.exist(response);
